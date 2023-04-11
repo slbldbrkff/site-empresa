@@ -1,0 +1,190 @@
+body{
+    
+}
+
+.links a:hover {
+text-decoration: underline solid #ffffff;
+}
+
+.header{
+
+}
+
+.links a{
+    text-decoration: none;
+    color: #594622;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*slideshow*/
+.imagem-slideshow {
+    width: 100%;
+    height: 60vh;
+background: url('../imagens/slideshow.jpg') center center/cover no-repeat;
+position: relative;
+}
+.texto-slideshow{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+  color: #ffffff;
+}
+.texto-slideshow h1{
+line-height: 40px;
+}
+.btn {
+background-color: rgb(10, 209, 76);
+color: #ffffff;
+padding: 10px 20px;
+margin-top: 15px;
+font-size: 18px;
+border-radius: 5px;
+}
+
+
+/*CONTEÚDO, TEXTO, CARTÕES E FORMULÁRIO*/
+.conteiner {
+width: 80%;
+margin: 100px auto; 
+text-align: justify;
+line-height: 20px;
+}
+#servicos {
+ margin-top: 100px;
+}
+/*CARTOES*/
+.cartoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.cartao {
+    width: 200px;
+    box-shadow: 3px 3px 5px #9e9e9e;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*FORMULÁRUI*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    background-color: #f5fafa;
+    border: 0px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+form .enviar{
+    width: 100px;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: var(--cor-primaria);
+    colar: #ffffff;
+}
+.comunicacoes {
+    text-align: center;
+}
+.comunicacoes p {
+    text-align: center;
+}
+.redes-sociais img {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #ffffff;
+    border-radius: 50;
+}
+
+.redes-sociais {
+    display: flex;
+}
+
+
+
+/*VARIÁVEIS*/
+:root {
+    --cor-primaria: #774adf;
+}
+
+
+/*MEDIA WARES*/
+@media (max-width: 597px){
+    .header{
+        flex-direction: column;
+    }
+    .links{
+        margin-top: 10px;
+    }
+    .links a {
+        
+            font-weight: normal;
+            font-size: 15px;
+    }
+
+    .container{
+        margin:50px auto;
+        font-size: 14px;
+    }
+
+    #servicos{
+        margin-top: 15px;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 80px;
+        text-align: center;
+        
+    }
+
+    .cartao {
+        box-shadow: 2px 2px 10px #9e9e9e;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 15px;
+    }
+    form .enviar{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer p {
+        width: 100%;
+     font-size: 16px;
+    }
+    .comunicacoes p {
+        font-size: 20px;
+    }
+    .redes-sociais img {
+        width: 35px;
+        margin-top: 0px;
+    }
+    }
